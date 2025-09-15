@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: yellow;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Texto */
+.texto {
+  margin-top: 40px;
+}
+.texto h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px yellow, 0 0 20px orange;
+}
+
+/* Flores */
+.flores img {
+  width: 300px;
+  margin-top: 50px;
+  animation: brillar 2s infinite alternate;
+}
+@keyframes brillar {
+  from { filter: brightness(1); }
+  to   { filter: brightness(1.3); }
+}
+
+/* Fondo estrellado */
+.stars {
+  width: 100%;
+  height: 100%;
+  background: url("https://www.transparenttextures.com/patterns/stardust.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: moverEstrellas 100s linear infinite;
+}
+@keyframes moverEstrellas {
+  from { background-position: 0 0; }
+  to { background-position: 10000px 10000px; }
+}
